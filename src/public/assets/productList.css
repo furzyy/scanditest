@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+* {
+    font-family: 'Fredoka';
+}
+
+.main-content-list , .product-list_footer{
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.product-list-header header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #333333;
+}
+
+.product-list-header header h2 {
+    font-size: 30px;
+}
+
+.product-list-header header div button, #add-product-btn {
+    padding: 5px 9px;
+    text-transform: uppercase;
+    background: #fff;
+    color: #333333;
+    border: 2px solid #333333;
+}
+
+.product-list-header header div #add-product-btn {
+    margin-right: 25px;
+}
+
+.product-list-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.product-list-content .product-box {
+    border: 3px solid #333333;
+    width: calc((100% / 4) - 100px);
+    margin-right: 25px;
+    margin-bottom: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-list-content .product-box div {
+    margin: auto;
+    padding: 20px 0;
+}
+
+.product-list-content .product-box div p {
+    margin-bottom: 8px;
+}
+
+.product-list_footer  {
+    border-top: 3px solid #333333;
+
+}
+
+.product-list_footer p {
+    text-align: center;
+    margin-bottom: 15px;
+
+}

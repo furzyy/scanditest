@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+* {
+    font-family: 'Fredoka';
+}
+
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-add-header {
+    font-size: 30px;
+    border-bottom: 3px solid #333333;
+}
+
+.product-add-header , .product-list_footer , form {
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+.products .dvd, .products .furniture, .products .book {
+    /*display: none;*/
+}
+
+form > div {
+    margin-bottom: 15px;
+
+}
+#sku  {
+    margin-left: 41px;
+}
+#name {
+    margin-left: 28px;
+}
+#price {
+    margin-left: 15px;
+}
+
+
+.product-list_footer {
+    border-top: 3px solid #333333;
+    text-align: center;
+}
