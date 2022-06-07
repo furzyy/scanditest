@@ -1,6 +1,8 @@
 <?php
 
-abstract class AbstractProduct
+require_once "Database.php";
+
+abstract class AbstractProduct extends Database
 {
     public abstract function getSku();
 

@@ -1,10 +1,7 @@
 <?php
 
-require_once "Database.php";
-
 $page = $_SERVER["REQUEST_URI"] ?? null;
 $requestMethod = $_SERVER["REQUEST_METHOD"];
-$db = new Database();
 
 switch ($page) {
     case @"/":
@@ -34,9 +31,7 @@ switch ($page) {
                 case "Book":
                     $productObject->setWeight($_POST["weight"]);
             }
-            $db->create($productObject, $productType);
-
-
+            $productObject->create($productType);
         }
         require_once "templates/addProduct.php";
         break;
